@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!-- 
+    Author: Xiaoqi Long
+    CS 101 Spring 2021
+    Date: April 17, 2021
+
+    Creative Project 2
+    A website for collecting mistakes in prepping for the Law School Admissions Test
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="light-mode.css" id="theme-link">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script defer src="todo-board.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <title>LSAT mistake collection</title>
+</head>
+<body>
+    <div id="container">
+        <!-- Source: https://heroicons.com/ -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+        </svg>
+        <div id="mode">
+            <button id="swap">dark mode</button>
+        </div>
+        <div id="data">
+            <div id="section-box">
+                <dl id="sections">
+                    <dt class="alt-text">RC</dt>
+                    <dd class="rc">
+                        <span class="cont">66</span>
+                        <span class="circle"></span>
+                    </dd>
+                    <dt class="alt-text">LR</dt>
+                    <dd class="lr">
+                        <span class="cont">50</span>
+                        <span class="circle"></span>
+                    </dd>
+                    <dt class="alt-text">LG</dt>
+                    <dd class="lg">
+                        <span class="cont">54</span>
+                        <span class="circle"></span>
+                    </dd>
+                </dl>
+            </div>
+            <header>
+                <h2>
+                    <span id="title">lsat</span>
+                    <span class="subtitle">mistake</span>
+                    <span class="subtitle">collection</span>
+                </h2>
+            </header>
+        </div>
+        <main>
+            <h1 id="boardtitle1">Logical Reasoning</h1>
+            <div class="board">
+                <div id="todo-lr" class="section">
+                    <h1>Inbox</h1>
+                    <div class="input-text">
+                        <input type="text" id="input-todo-lr-1" placeholder="New...">
+                        <span class="add-btn" id="btn-lr-1">+</span>
+                    </div>
+                    <div class="card">
+                        PT19 S1 Q4
+                    </div>
+                    <div class="card">
+                        PT86 S3 Q22
+                    </div>
+                </div>
+                <div id="fst-lr" class="section">
+                    <h1>1st Round of Review Done</h1>
+                    <div class="input-text">
+                        <input type="text" id="input-todo-lr-2" placeholder="New...">
+                        <span class="add-btn" id="btn-lr-2">+</span>
+                    </div>
+                    <div class="card">PT44 S1 Q20</div>
+                </div>
+                <div id="snd-lr" class="section">
+                    <h1>2nd Round of Review Done</h1>
+                    <div class="input-text">
+                        <input type="text" id="input-todo-lr-3" placeholder="New...">
+                        <span class="add-btn" id="btn-lr-3">+</span>
+                    </div>
+                </div>
+            </div>
+            <h1 id="boardtitle2">Reading Comprehension</h1>
+            <div class="board">
+                <div id="todo-rc" class="section">
+                    <h1>Inbox</h1>
+                    <div class="input-text">
+                        <input type="text" id="input-todo-rc-1" placeholder="New...">
+                        <span class="add-btn" id="btn-rc-1">+</span>
+                    </div>
+                    <div class="card">
+                        PT19 S1 Q4
+                    </div>
+                    <div class="card">
+                        PT86 S3 Q22
+                    </div>
+                </div>
+                <div id="fst-rc" class="section">
+                    <h1>1st Round of Review Done</h1>
+                    <div class="input-text">
+                        <input type="text" id="input-todo-rc-2" placeholder="New...">
+                        <span class="add-btn" id="btn-rc-2">+</span>
+                    </div>
+                    <div class="card">PT44 S1 Q20</div>
+                </div>
+                <div id="snd-rc" class="section">
+                    <h1>2nd Round of Review Done</h1>
+                    <div class="input-text">
+                        <input type="text" id="input-todo-rc-3" placeholder="New...">
+                        <span class="add-btn" id="btn-rc-3">+</span>
+                    </div>
+                </div>
+            </div>
+            <h1 id="boardtitle3">Logic Games</h1>
+            <div class="board">
+                <div id="todo-lg" class="section">
+                    <h1>Inbox</h1>
+                    <div class="input-text">
+                        <input type="text" id="input-todo-lg-1" placeholder="New...">
+                        <span class="add-btn" id="btn-lg-1">+</span>
+                    </div>
+                    <div class="card">
+                        PT19 S1 Q4
+                    </div>
+                    <div class="card">
+                        PT86 S3 Q22
+                    </div>
+                </div>
+                <div id="fst-lg" class="section">
+                    <h1>1st Round of Review Done</h1>
+                    <div class="input-text">
+                        <input type="text" id="input-todo-lg-2" placeholder="New...">
+                        <span class="add-btn" id="btn-lg-2">+</span>
+                    </div>
+                    <div class="card">PT44 S1 Q20</div>
+                </div>
+                <div id="snd-lg" class="section">
+                    <h1>2nd Round of Review Done</h1>
+                    <div class="input-text">
+                        <input type="text" id="input-todo-lg-3" placeholder="New...">
+                        <span class="add-btn" id="btn-lg-3">+</span>
+                    </div>
+                </div>
+            </div>
+            <h1>Archives</h1>
+            <button id="view">show</button>
+            <div class="hidden" id="archive">
+                <div class="section">
+                    <h1>Inbox</h1>
+                    <div class="card">
+                        PT19 S1 Q4
+                    </div>
+                    <div class="card">
+                        PT86 S3 Q22
+                    </div>
+                </div>
+                <div class="section">
+                    <h1>1st Round of Review Done</h1>
+                    <div class="card">PT44 S1 Q20</div>
+                </div>
+                <div class="section">
+                    <h1>2nd Round of Review Done</h1>
+                </div>
+            </div>
+        </main>
+        
+    </div>
+</body>

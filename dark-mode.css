@@ -1,0 +1,281 @@
+/*
+  Name: Xiaoqi Long
+  This is the styles.css page for my cat's personal website. It is used by all pages
+  in their website.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+
+/*
+  Colors
+*/
+
+body {
+  color: #fff;
+  background-image: url("images/background.png");
+}
+
+::placeholder {
+  color: #707c74;
+}
+
+#section-box {
+  background: url("images/bdr_w_50.png") left top no-repeat;
+}
+
+#sections dd {
+  background: url("images/bdr_w_50.png") left bottom no-repeat;
+}
+
+.section.droppable {
+  border: 1px dashed #666;
+}
+
+.section > h1 {
+  border-bottom: 1px solid #999;
+}
+
+.card, input, .add-btn, .input-text {
+  background: #bdc0ba;
+  color: #707c74;
+}
+
+.add-btn:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+button {
+  z-index: 1;
+  border-color: #fff;
+  border: 1px dotted;
+  background-color: transparent;
+  color: inherit;
+}
+
+/*
+  Font Properties
+*/
+
+body {
+  font-family: 'Comfortaa', cursive;
+}
+
+button {
+  font-size: 13px;
+  font-family: inherit;
+  width: 50px;
+  text-align: center;
+}
+
+#title {
+  font-size: 80px;
+  writing-mode: vertical-lr;
+}
+
+.subtitle {
+  font-size: 30px;
+  font-weight: 400;
+  writing-mode: vertical-lr;
+}
+
+.add-btn {
+  font-size: 20px;
+}
+
+.alt-text {
+  font-size: 10px;
+}
+
+#sections dd {
+  font-size: 20px;
+}
+
+.section > h1 {
+  font-size: 12pt;
+  text-align: center;
+}
+
+/*
+  Layout
+*/
+
+#title, .subtitle, header, #data {
+  display: flex;
+}
+
+body {
+    margin: 0%;
+}
+
+#container {
+  position: relative;
+  width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#data{
+  position: absolute;
+  left: 1000px;
+  top: 40px;
+  height: 507px;
+  width: 450px;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#title{
+  height: 204px;
+  width: 440px;
+}
+
+.subtitle {
+  width: 440px;
+  padding-top: 24px;
+  text-align: center;
+  margin-left: 4%;
+}
+
+header {
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 0;
+  margin-left: 50px;
+}
+
+#section-box {
+  width: 100px;
+  margin-left: 0;
+}
+
+#sections {
+  width: 50px;
+  vertical-align: baseline;
+}
+
+#sections dt {
+  width: 40px;
+  height: 9px;
+  margin: 10px 0 6px 0;
+}
+
+.alt-text, #sections dd .circle {
+  display: block;
+}
+
+.alt-text {
+  overflow: hidden;
+}
+
+#sections dd {
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+  text-align: center;
+  line-height: 50px;
+  vertical-align: middle;
+  padding: 0 0 11px 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+}
+
+#sections dd .circle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  background: url(images/circle.png) no-repeat;
+}
+
+.board, #archive {
+  display: table;
+  margin: 0;
+  padding: 0;
+  border-spacing: 5px;
+}
+
+.section {
+  display: table-cell;
+  margin: 0;
+  border: none;
+  padding: 5px;
+  width: 250px;
+}
+
+.section > h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px 5px;
+  padding: 10px;
+  width: 250px;
+  height: 20px;
+  cursor: move;
+  text-align: center;
+  border-radius: 25px;
+}
+
+main {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+}
+
+input {
+  width: 230px;
+  height: 20px;
+  border: none;
+}
+
+.input-text {
+  margin: 10px 5px;
+  padding: 10px;
+  width: 250px;
+  height: 20px;
+  border-radius: 25px;
+}
+
+#mode {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* Button Properties */
+
+svg {
+  position: relative;
+  left: 955px;
+  top: 325px;
+  height: 50px;
+  width: 50px;
+}
+
+#swap {
+  position: absolute;
+  left: 955px;
+  top: 400px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#view {
+  position: relative;
+  bottom: 15px;
+}
+
+.hidden {
+  display: none !important;
+}
